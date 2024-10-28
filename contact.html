@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: white;
+        }
+        .image-section {
+            flex: 1;
+            background-color: #b2d8d8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+        }
+        .form-section {
+            flex: 1;
+            padding: 40px;
+        }
+        h1 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .name-fields {
+            display: flex;
+            gap: 10px;
+        }
+        .name-fields input {
+            flex: 1;
+        }
+        .required {
+            color: red;
+        }
+        button {
+            background-color: #ff6b6b;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #ff5252;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img src="top_view_img.jpg" alt="Woman working on laptop">
+        </div>
+        <div class="form-section">
+            <h1>Contact Us</h1>
+            <form>
+                <div class="form-group">
+                    <label>Name <span class="required">*</span></label>
+                    <div class="name-fields">
+                        <input type="text" placeholder="First" required>
+                        <input type="text" placeholder="Last" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Email <span class="required">*</span></label>
+                    <input type="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Leave us a few words <span class="required">*</span></label>
+                    <textarea rows="4" required></textarea>
+                </div>
+                <button type="submit">SUBMIT</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
